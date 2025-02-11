@@ -1,0 +1,64 @@
+.phoneNumberForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh; 
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box; 
+  }
+  
+  .numberContainer {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  }
+  
+  #phonenumber {
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    flex-grow: 1; 
+    border-radius: 8px 0 0 8px; 
+    color: #333; 
+  }
+  
+  #phonenumber::placeholder {
+    color: #999; 
+  }
+  
+  .phoneNumberButton {
+    background-color: #007bff; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 0 8px 8px 0; 
+    transition: background-color 0.3s ease; 
+  
+  }
+  
+  .phoneNumberButton:hover {
+    background-color: #0056b3; 
+  }
+  
+  
+  @media (max-width: 600px) {
+    .numberContainer {
+      flex-direction: column; 
+      align-items: stretch; }
+  
+    #phonenumber {
+      border-radius: 8px 8px 0 0;
+    }
+  
+    .phoneNumberButton {
+      border-radius: 0 0 8px 8px;
+    }
+  }
